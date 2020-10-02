@@ -4,7 +4,6 @@ int index_minimum(int arr[], int n)
 {
 	int temp{};
 	temp = arr[0];
-
 	int index{};
 
 	for (int i{}; i < n; ++i)
@@ -15,18 +14,14 @@ int index_minimum(int arr[], int n)
 			index = i;
 		}
 	}
-
 	return index;
 }
 
 int main()
 {
-
 	int t{};
 	std::cin >> t;
-
 	for (int i{}; i < t; ++i)
-
 	{
 		int n{};
 		int k{};
@@ -45,7 +40,6 @@ int main()
 		min_element = arr[min_index];
 
 		int counter{};
-
 		for (int p{}; p < n; ++p)
 		{
 			if (p != min_index)
@@ -53,10 +47,7 @@ int main()
 				counter = counter + ((k - arr[p]) / min_element);
 			}
 		}
-
-		std::cout << counter << "\n";
-		
+		std::cout << counter << "\n";		
 	}
-
 	return 0;
 }
