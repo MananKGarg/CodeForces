@@ -4,7 +4,6 @@ for i in range(t):
     arr = [int(p) for p in input().split()]
     elem = min(arr)
     arr.remove(elem)
-
     counter = 0
 
     for j in range(len(arr)):
